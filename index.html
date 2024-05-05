@@ -3,26 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocery Bud</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
         <link rel="stylesheet" href="./styles/style.css" />
-        <title>Flights</title>
     </head>
     <body>
-        <main>
-            <div class="img">
-                <img src="./assets/flight.jpeg" alt="flight" />
-            </div>
-            <div id="parent">
-                <div class="flight test">
-                    <div class="name">Name</div>
-                    <div class="plane">Plane</div>
-                    <div class="departureDate">Departure Date</div>
-                    <div class="origin">Origin</div>
-                    <div class="arrivalDate">Arrival Date</div>
-                    <div class="destination">Destination</div>
-                    <div class="stops">Stops</div>
+        <section class="section-center">
+            <form class="todos-form">
+                <p class="alert"></p>
+                <h3>Todo list</h3>
+                <div class="form-control">
+                    <input
+                        type="text"
+                        id="todo-input"
+                        placeholder="Add new task"
+                    />
+                    <button type="submit" class="submit-btn">submit</button>
                 </div>
+                <div class="error"></div>
+            </form>
+
+            <div class="todos-container">
+                <div class="todos-list"></div>
+                <button class="clear-btn">clear items</button>
             </div>
-        </main>
+        </section>
+
         <script type="module" src="./src/init.js"></script>
     </body>
 </html>
